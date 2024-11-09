@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sport Club Corinthians Paulista | Site Oficial</title>
+  <title>Gremio Recreativo AXE | Site Oficial</title>
   <style>
     :root {
       --primary: #000000;
@@ -25,6 +25,7 @@
     .header {
       background-color: var(--primary);
       padding: 1rem 0;
+      position: relative;
     }
 
     .nav-container {
@@ -71,6 +72,22 @@
       border: none;
       color: var(--secondary);
       cursor: pointer;
+    }
+
+    /* Estilo para o menu na versão mobile */
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: var(--primary);
+      display: none; /* Menu oculto por padrão */
+    }
+
+    .nav-menu.show {
+      display: flex; /* Exibe o menu quando a classe 'show' é adicionada */
     }
 
     .hero {
@@ -198,22 +215,11 @@
     /* Estilos responsivos para o menu */
     @media (max-width: 768px) {
       .nav-menu {
-        display: none; /* Esconde o menu em telas pequenas */
-        flex-direction: column;
-        width: 100%;
-        background-color: var(--primary);
-        position: absolute;
-        top: 60px;
-        left: 0;
-        padding: 1rem 0;
-      }
-
-      .nav-menu.show {
-        display: flex; /* Exibe o menu quando a classe 'show' é adicionada */
+        display: none; /* Esconde o menu por padrão em telas pequenas */
       }
 
       .menu-toggle {
-        display: block; /* Exibe o ícone do hambúrguer */
+        display: block; /* Exibe o ícone do hambúrguer em telas pequenas */
       }
 
       .hero-content h1 {
@@ -269,7 +275,7 @@
           </div>
         </article>
         <article class="news-card">
-          <img alt="jogadores treinando no campo, fotografia esportiva" src="Imagens/Img3.jpeg" width="600" height="400">
+          <img alt="jogadores treinando no campo, fotografia esportiva" src="Img3.jpeg" width="600" height="400">
           <div class="news-card-content">
             <h3>Time Unido</h3>
             <p>Comemoração Após Classificação</p>
@@ -322,4 +328,3 @@
 
 </body>
 </html>
-
