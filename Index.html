@@ -1,0 +1,286 @@
+<html><head><base href="" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sport Club Corinthians Paulista | Site Oficial</title>
+<style>
+:root {
+  --primary: #000000;
+  --secondary: #ffffff;
+  --accent: #C0C0C0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+.header {
+  background-color: var(--primary);
+  padding: 1rem 0;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu li {
+  margin-left: 2rem;
+}
+
+.nav-menu a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: opacity 0.3s;
+}
+
+.nav-menu a:hover {
+  opacity: 0.8;
+  color: var(--accent);
+}
+
+.hero {
+  position: relative;
+  height: 600px;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('Imagens/Imagem 1.jpeg') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary);
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: var(--primary);
+  color: var(--secondary);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s;
+  border: 2px solid var(--secondary);
+}
+
+.btn:hover {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.news-section {
+  padding: 4rem 0;
+  background-color: #f5f5f5;
+}
+
+.news-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.news-card {
+  background-color: var(--secondary);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-card-content {
+  padding: 1.5rem;
+}
+
+.news-card-content h3 {
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+footer {
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 3rem 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.footer-section h4 {
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.social-links {
+  list-style: none;
+}
+
+.social-links li {
+  margin-bottom: 0.5rem;
+}
+
+.social-links a {
+  color: var(--secondary);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+}
+</style>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav-container">
+      <svg class="logo" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="45" fill="#000000" stroke="#ffffff" stroke-width="2"/>
+        <text x="50" y="60" text-anchor="middle" fill="white" font-size="40" font-weight="bold">AXE</text>
+      </svg>
+      <ul class="nav-menu">
+        <li><a href="Jogos.html">Jogos</a></li>
+        <li><a href="https://exemplo.com/ingressos">Torcida</a></li>
+        <li><a href="https://exemplo.com/time">Time</a></li>
+        <li><a href="https://exemplo.com/socios">Fiel Torcedor</a></li>
+        <li><a href="https://exemplo.com/loja">Loja</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Gremio Recreativo</h1>
+      <p>O Time do Povo</p>
+      <a href="https://exemplo.com/socios" class="btn">Seja Fiel Torcedor</a>
+    </div>
+  </section>
+
+  <section class="news-section">
+    <div class="news-container">
+      <h2>Torcida</h2>
+      <div class="news-grid">
+        <article class="news-card">
+          <img alt="torcida do corinthians em estádio lotado, fotografia esportiva" src="Imagens\Img2.jpeg" width="600" height="400">
+          <div class="news-card-content">
+            <h3>Comemoração Pós Jogos</h3>
+            <p>Cada jogo, uma resenha.</p>
+          </div>
+        </article>
+        <article class="news-card">
+          <img alt="jogadores treinando no campo, fotografia esportiva" src="Imagens\Img3.jpeg" width="600" height="400">
+          <div class="news-card-content">
+            <h3>Time Unido</h3>
+            <p>Comemoração Após Classificação</p>
+          </div>
+        </article>
+        <article class="news-card">
+          <img alt="comemoração de gol da equipe, fotografia esportiva" src="Imagens\Img4.jpeg" width="600" height="400">
+          <div class="news-card-content">
+            <h3>Concentração Antes do Jogo</h3>
+            <p>Tecnico ajustando time no Intervalo</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Contato</h4>
+        <p>Email: Pailo.marcos@hotmail.com </p>
+        <p>Tel: (11) 1234-5678</p>
+      </div>
+      <div class="footer-section">
+        <h4>Redes Sociais</h4>
+        <ul class="social-links">
+          <li><a href="https://facebook.com">Facebook</a></li>
+          <li><a href="https://twitter.com">Twitter</a></li>
+          <li><a href="https://instagram.com">Instagram</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Endereço</h4>
+        <p>Rua Mendonça Junior</p>
+        <p>Imirim</p>
+        <p>São Paulo - SP</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
